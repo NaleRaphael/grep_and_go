@@ -17,8 +17,9 @@ Search and navigate to the line right away.
 1. Clone this repository.
 2. Create a symlink of `run.sh` to `/usr/local/bin/<EXEC_NAME>`. e.g.,
     ```bash
-    # here we use `gg` as an example
-    $ ln -s run.sh /usr/local/bin/gg
+    # Here we use `gg` as the command alias.
+    # Remember to create the symlink of `run.sh` with absolute path
+    $ ln -s $(realpath run.sh) /usr/local/bin/gg
     ```
     > :note: Of course, you can install the script `run.sh` to anywhere you prefer.
     > Just make sure you can run it conveniently.
